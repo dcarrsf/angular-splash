@@ -1,0 +1,15 @@
+[
+	{
+		"name":"Projects",
+		"href":"/projects"
+	},{
+		"name":"Publications",
+		"href":"/publications"
+	},{
+		"name":"Courses",
+		"href":"/courses"
+	},{
+		"name":"Contact",
+		"href":"/contact"
+	}
+]

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.formContainer{
+	position:absolute;
+	width:80%;
+	max-width:580px;
+	margin:0 auto;
+	bottom:10%;
+	left:0;
+	right:0;
+}
+.formContainer h2{
+	/*opacity:0.5;*/
+	font-size:44px;
+	margin-bottom:-10px;
+	margin-left:-6px;
+}
+.formText{
+	/*text-transform:none;*/
+	font-size:0.8em;
+	margin-top:-10px;
+	margin-left:14px;
+	margin-bottom:-8px;
+	letter-spacing: 0.2em;
+	display:none;
+}
+.formContainer input{
+	opacity:0.8;
+}
+.formContainer textarea{
+	resize: none;
+	opacity:0.8;
+}
+.error{
+    color: yellow;
+}
+.feedbackBtn{
+	width:100%;
+	max-width:320px;
+}
+.formFeedback{
+	position:absolute;
+	bottom:10%;
+	left:10;
+	right:10;
+	text-align:center;	
+	margin:20px;
+}
+.loading{
+	margin-bottom:50px;	
+	margin:20px;
+}
+/* Index CSS */
+
+section {
+	position: absolute;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	bottom:7vh;
+	width:80%;
+	z-index:1;
+}
+.home-container{
+	position:absolute;
+	bottom:5%;
+	left:50px;
+	right:50px;
+}
+.headline {
+	font-size:32px;
+	line-height:0.95em;
+	margin-bottom:10px;
+	font-weight:400;
+}
+body p {
+	font-size:12px;
+	line-height:1.75em;
+    text-align: justify;
+    text-justify:distribute;
+}
+.large-content{
+	display:none;	
+}
+/*--- TABLET SIZE (768px+) ---*/
+
+@media (min-width:768px){
+	.home-container{
+		position:absolute;
+		bottom:10%;
+		left:70px;
+		right:70px;
+	}
+	.headline{
+		font-size:75px;
+		line-height:0.85em;
+		margin-bottom:30px;
+		font-weight:400;
+	}
+	body p {
+		font-size:16px;
+		line-height:1.5em;
+	}
+	.small-content{
+		display:none;	
+	}
+	.large-content{
+		display:block;	
+	}
+}
+
+/*--- DESKTOP SIZE (1024px+) ---*/
+
+@media (min-width:1024px){
+	.formContainer textarea{
+		resize: vertical;
+		max-height: 300px;
+		min-height: 100px;
+	}
+	section {
+	}
+	.home-container{
+		position:absolute;
+		bottom:10%;
+		left:100px;
+		right:100px;
+	}
+	.headline,
+	.formContainer h2 {
+		font-size:100px;
+		line-height:0.9em;
+	}
+	body p {
+		font-size:14px;
+		line-height:1.5em;
+		text-align:left;
+		text-justify:auto;
+	}
+}

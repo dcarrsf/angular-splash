@@ -1,0 +1,38 @@
+
+<div class="formContainer" ng-show="!isFormSubmitted && !isFormSuccessful && !isFormFailed">
+	<h2>Contact</h2>
+    <div class="formText">Drop me a line with inqueries and comments</div>
+    <br/>
+    <form id="messageForm" novalidate role="form" method="POST" action="./cgi-bin/send-email.php">
+        <div class="form-group">
+            <label for="subject">Subject*</label>
+            <input type="text" required ng-click="isSubjectValid=false" class="form-control" id="subject" name="subject" placeholder="Subject">
+            <p ng-show="isSubjectValid" class="error">Enter a message subject here</p>
+        </div>
+        <div class="form-group">
+            <label for="email">Your Email*</label>
+            <input type="email" required ng-click="isEmailValid=false" class="form-control" name="email" id="email" placeholder="Email">
+            <p ng-show="isEmailValid" class="error">Enter a valid email</p>
+        </div>
+        <div class="form-group">
+            <label for="message">Message*</label>
+            <textarea cols="60" required ng-click="isMessageValid=false" rows="3" required class="form-control" id="message" name="message" placeholder="Message"></textarea>
+            <p ng-show="isMessageValid" class="error">Enter a message</p>
+        </div>
+        <button type="submit" name="submit" class="btn btn-block btn-primary pull-right">Submit</button>
+    </form>
+</div>
+
+<div ng-show="isFormSubmitted && !isFormSuccessful && !isFormFailed" class="formFeedback loading">
+  <h2>Just a moment while sending your Message...</h2>
+</div>
+
+<div ng-show="isFormSuccessful" class="formFeedback">
+  <h2>Your message was sent successfully. I'll get back to you shortly.</h2>
+  <a href="#contact" class="btn btn-success feedbackBtn">Close</a>
+</div>
+
+<div ng-show="isFormFailed" class="formFeedback">
+	<h2>Sorry, there was a problem sending your message. Please try again.</h2>
+    <a href="#contact" class="btn btn-danger feedbackBtn">Close</a>
+</div>
