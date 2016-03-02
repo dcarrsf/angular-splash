@@ -76,14 +76,3 @@ dancarrcoDirectives.directive('mobileNavbar', ['navigationService', function(nav
         }
     }
  }]);
- 
-dancarrcoDirectives.directive('nestedBlog', ['blogService', function(blogService){
-    return {
-        restrict: "E",
-        link: function (scope, element, attrs) {
-			
-			// Nest blog.dancarr.co
-			//element.load('http://blog.dancarr.co');
-        }
-    }
- }]);

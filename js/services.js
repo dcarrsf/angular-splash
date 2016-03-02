@@ -11,7 +11,7 @@ dancarrcoServices.factory('navigationService', function($rootScope, $http, $q) {
 		navigationService.getJSON = function() {
 			
 			var deferred = $q.defer();
-			$http.get('data/navigation-temp.json')
+			$http.get('data/navigation.json')
 				.success(function(data) {
 					navigationService.json = data;
 					deferred.resolve(data);

@@ -1,15 +1,19 @@
 [
 	{
-		"name":"Projects",
-		"href":"/projects"
+		"name":"Blog",
+		"href":"http://blog.dancarr.co",
+		"target":"_blank"
 	},{
-		"name":"Publications",
-		"href":"/publications"
+		"name":"LinkedIn",
+		"href":"https://www.linkedin.com/in/dancarrsf",
+		"target":"_blank"
 	},{
-		"name":"Courses",
-		"href":"/courses"
+		"name":"GitHub",
+		"href":"https://github.com/dcarrsf/",
+		"target":"_self"
 	},{
 		"name":"Contact",
-		"href":"/contact"
+		"href":"#contact",
+		"target":"_self"
 	}
 ]
