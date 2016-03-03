@@ -31,6 +31,9 @@ dancarrcoDirectives.directive('mobileNavbar', ['navigationService', function(nav
 					// error loading JSON...
 				});
 				
+			/* Mobile menu based on the Hamburgler menu widget by John Morris */
+			/* © 2015, John Morris http://johnm.io/project/hamburgler/ */
+			
 			// Icon animation
 			$(".icon").click(function () {
 				$(".mobilenav").fadeToggle(500);

@@ -49,6 +49,9 @@ body {
 
 /* Navbar */
 
+/* Mobile menu based on the Hamburgler menu widget by John Morris */
+/* © 2015, John Morris http://johnm.io/project/hamburgler/ */
+
 .mobilenav {
     font-family: inherit;
 	text-align:center;
@@ -177,9 +180,6 @@ body {
 		margin-left:0;
 	}
 }
-
-/* Mobile menu based on the Hamburgler menu widget by John Morris */
-/* © 2015, John Morris http://johnm.io/project/hamburgler/ */
 
 /* leaving animations ----------------------------------------- */
 /* rotate and fall */
