@@ -181,32 +181,6 @@ body {
 /* Mobile menu based on the Hamburgler menu widget by John Morris */
 /* © 2015, John Morris http://johnm.io/project/hamburgler/ */
 
-/* PAGES ANIMATIONS
-============================================================================= */
-
-/* make our pages be full width and full height */
-/* positioned absolutely so that the pages can overlap each other as they enter and leave */
-.page        {
-    bottom:0; 
-    padding-top:200px;
-    position:absolute; 
-    top:100px;  
-    width:100%; 
-}
-/*
-.page h1    { font-size:60px; }
-.page a     { margin-top:50px; }*/
-
-/* PAGES (specific colors for each page)
-============================================================================= */
-.page-home      { background:rgba(255,255,255,0); }
-.page-blog      { background:rgba(255,255,255,1.0); }
-.page-social    { background:rgba(255,255,255,0); }
-.page-contact   { background:rgba(255,255,255,0); }
-
-/* ANIMATIONS
-============================================================================= */
-
 /* leaving animations ----------------------------------------- */
 /* rotate and fall */
 @keyframes rotateFall {

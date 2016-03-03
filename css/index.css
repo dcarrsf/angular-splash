@@ -1,11 +1,15 @@
 @charset "utf-8";
 
+/*--- Fallback text ---*/
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
 }
+
+/*--- Contact Form ---*/
 
 .formContainer{
 	position:absolute;
@@ -57,7 +61,8 @@
 	margin-bottom:50px;	
 	margin:20px;
 }
-/* Index CSS */
+
+/*--- Splash text ---*/
 
 section {
 	position: absolute;
@@ -89,6 +94,7 @@ body p {
 .large-content{
 	display:none;	
 }
+
 /*--- TABLET SIZE (768px+) ---*/
 
 @media (min-width:768px){

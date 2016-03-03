@@ -17,7 +17,7 @@
 ]);
 
 // Navigation
-dancarrcoApp.config(function ($routeProvider) {
+dancarrcoApp.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
 	
     $routeProvider
       .when('/', {
@@ -35,4 +35,10 @@ dancarrcoApp.config(function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
-  });
+    
+      // use the HTML5 History API
+      $locationProvider.html5Mode({
+		  enabled: true,
+		  requireBase: false
+		});
+  }]);
