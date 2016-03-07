@@ -1,6 +1,7 @@
 <!doctype html>
 <html ng-app="dancarrcoApp">
   <head>
+	<!--<base href="http://localhost/dancarrco/" >-->
     <meta charset="utf-8">
     <title>Dan Carr | Software Development & Training</title>
     <meta name="description" content="Dan Carr | Senior Software Engineer and Trainer with expertise in eLearning, web, and mobile.">
@@ -11,18 +12,13 @@
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <!-- JavaScript -->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="libs/angular/angular.min.js"></script>
     <script src="libs/angular-route/angular-route.min.js"></script>
     <script src="libs/angular-animate/angular-animate.min.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/directives.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/app.js"></script>
   </head>
   <!-- backgroundStyle -->
   <body background-style="main" ng-controller="MainCtrl">
+  
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -32,6 +28,14 @@
 
     <!-- View -->
     <ng-view></ng-view>
+    
+    <!-- JavaScript -->
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/app.js"></script>
     
 </body>
 </html>

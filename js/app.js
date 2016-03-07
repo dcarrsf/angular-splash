@@ -17,7 +17,9 @@
 ]);
 
 // Navigation
-dancarrcoApp.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+//dancarrcoApp.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+	
+dancarrcoApp.config( function ($routeProvider) {
 	
     $routeProvider
       .when('/', {
@@ -37,8 +39,10 @@ dancarrcoApp.config(["$routeProvider", "$locationProvider", function ($routeProv
       });
     
       // use the HTML5 History API
-      $locationProvider.html5Mode({
+     /* $locationProvider.html5Mode({
 		  enabled: true,
-		  requireBase: false
-		});
-  }]);
+		  requireBase: true
+		});*/
+ // }]);
+ 
+});
