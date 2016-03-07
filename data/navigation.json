@@ -3,11 +3,11 @@
 		"name":"Blog",
 		"href":"http://blog.dancarr.co"
 	},{
-		"name":"GitHub",
-		"href":"https://github.com/dcarrsf"
-	},{
 		"name":"LinkedIn",
 		"href":"https://www.linkedin.com/in/dancarrsf"
+	},{
+		"name":"GitHub",
+		"href":"https://github.com/dcarrsf"
 	},{
 		"name":"Contact",
 		"href":"/contact"
