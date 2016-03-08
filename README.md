@@ -1,4 +1,4 @@
-# dancarr.co
+# angular-splash
 Simple splash page website composed of AngularJS experiments
 
 This splash page design is based on recent work with the Adobe creative team, and expanded into a playground for JavaScript experiments with AngularJS. The page includes a number of subtle features, which you can see if you explore the code.
